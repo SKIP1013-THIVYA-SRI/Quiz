@@ -5,18 +5,18 @@ public class Quiz {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int classHeld;
-		int classAttend;
+		double classHeld;
+		double classAttend;
 		double percentage;
 		Scanner scan = new Scanner (System.in);
 		
 	    System.out.print ("Enter the number of times class held : ");
-	    classHeld = scan.nextInt();
+	    classHeld = scan.nextDouble();
 	    
 	    System.out.print ("Enter the number of times you attend the class : ");
-	    classAttend = scan.nextInt();
+	    classAttend = scan.nextDouble();
 	    
-	    percentage = ((classAttend/classHeld)*100);
+	    percentage = classAttend/classHeld*100;
 	    
 	    System.out.println ("Percentage of class attended is : " + percentage);
 	    if (percentage < 75)
@@ -25,8 +25,6 @@ public class Quiz {
 	    else
 	    	System.out.println ("You can sit for the exam." );
 	    	
-	    
-
 	}
 
 }
