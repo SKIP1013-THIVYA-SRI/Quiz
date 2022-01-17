@@ -1,0 +1,32 @@
+package week13;
+import java.util.Scanner;
+
+public class Quiz {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int classHeld;
+		int classAttend;
+		double percentage;
+		Scanner scan = new Scanner (System.in);
+		
+	    System.out.print ("Enter the number of times class held : ");
+	    classHeld = scan.nextInt();
+	    
+	    System.out.print ("Enter the number of times you attend the class : ");
+	    classAttend = scan.nextInt();
+	    
+	    percentage = ((classAttend/classHeld)*100);
+	    
+	    System.out.println ("Percentage of class attended is : " + percentage);
+	    if (percentage < 75)
+	    	System.out.println ("Sorry. You unable sit for the exam." );
+	    
+	    else
+	    	System.out.println ("You can sit for the exam." );
+	    	
+	    
+
+	}
+
+}
